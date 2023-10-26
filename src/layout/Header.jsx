@@ -10,8 +10,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const NaviGationData = [
   { name: "home", path: "/", icon: <HiHome /> },
-  { name: "Cotact", path: "/Cotact", icon: <HiUser /> },
-  { name: "aa", path: "/aa", icon: <HiViewColumns /> },
+  { name: "Cotact", path: "/Contact-Us", icon: <HiUser /> },
+  { name: "sssssssssssss", path: "/aa", icon: <HiViewColumns /> },
   { name: "ss", path: "/ss", icon: <HiRectangleGroup /> },
   { name: "dd", path: "/dd", icon: <HiChatBubbleBottomCenterText /> },
   { name: "ff", path: "/ff", icon: <HiEnvelope /> },
@@ -27,12 +27,18 @@ const Header = () => {
           return (
             <Link key={index} to={links.path}>
               <div
-                className={`${
-                  links.path === iLocation.pathname
-                    ? "text-rose-600"
-                    : console.log("gggg", links.path)
+                className={`relative flex items-center group hover:text-rose-600 transition-all duration-300 ${
+                  links.path === iLocation.pathname ? "text-rose-600" : ""
                 }`}
               >
+                <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
+                  <div className="bg-white relative flex text-black  items-center p-[6px] rounded-[3px] ">
+                    <div className="text-[12px] leading-none font-semibold capitalize">
+                      {links.name}
+                    </div>
+                    <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-8 absolute -right-4"></div>
+                  </div>
+                </div>
                 {links.icon}
               </div>
             </Link>

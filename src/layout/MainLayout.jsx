@@ -1,12 +1,19 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
+import { AnimatePresence, motion } from "framer-motion";
+import Transition from "./Transition";
 
 const MainLayout = () => {
+  const router = useLocation();
+  console.log("router", router);
   return (
-    <div className="w-screen h-screen">
-      <Outlet />
-      <Header />
-    </div>
+    <AnimatePresence mode="wait">
+      <motion.div key={router.pathname} className="h-full">
+        <Transition />
+        <Outlet />
+        <Header />
+      </motion.div>
+    </AnimatePresence>
   );
 };
 
