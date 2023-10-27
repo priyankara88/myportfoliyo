@@ -5,11 +5,11 @@ import Transition from "./Transition";
 
 const MainLayout = () => {
   const router = useLocation();
-  console.log("router", router);
+
   return (
     <AnimatePresence mode="wait">
-      <motion.div key={router.pathname} className="h-full">
-        <Transition />
+      <motion.div className="h-full w-full">
+        <Transition key={router.pathname} />
         <Outlet />
         <Header />
       </motion.div>
