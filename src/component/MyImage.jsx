@@ -1,7 +1,7 @@
 import MyImg from "../assets/img/avatar.png";
 const MyImage = () => {
   return (
-    <div className="hidden xl:flex xl:max-w-none">
+    <div className="hidden xl:flex xl:max-w-none z-20">
       <img
         src={MyImg}
         alt="My Image"
