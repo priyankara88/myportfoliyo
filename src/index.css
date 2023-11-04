@@ -5,3 +5,40 @@
 .translate-z-0 {
   transform: translateZ(0px);
 }
+
+.line-color {
+  overflow: hidden;
+}
+
+@keyframes animate {
+  0% {
+    top: 100%;
+    left: -130%;
+  }
+  100% {
+    left: 130%;
+    top: -100%;
+  }
+}
+
+.line-color:hover::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  top: 100%;
+  left: -130%;
+  transform: rotate(45deg);
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #25a4e962,
+    #25a4e962,
+    #25a4e962
+  );
+  z-index: 1;
+  transform-origin: bottom bottom;
+  animation: animate 800ms linear;
+  animation-fill-mode: forwards;
+}

@@ -15,7 +15,7 @@ const Particale = () => {
   return (
     <>
       <Particles
-        className="w-full h-screen absolute translate-z-0  -z-10"
+        className="w-full h-screen absolute translate-z-0  -z-[999]"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -23,8 +23,9 @@ const Particale = () => {
           fullScreen: { enable: false },
           background: {
             color: {
-              value: "#1e293b",
+              value: "#10151D",
             },
+            opacity: 1,
           },
           fpsLimit: 120,
           interactivity: {
@@ -51,10 +52,10 @@ const Particale = () => {
           },
           particles: {
             color: {
-              value: "#e68e2e",
+              value: "#10151d",
             },
             links: {
-              color: "#f5d393",
+              color: "#25A6E9",
               distance: "150",
               enable: true,
               opacity: 0.5,
