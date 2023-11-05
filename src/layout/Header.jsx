@@ -11,7 +11,7 @@ import { Link, useLocation } from "react-router-dom";
 const NaviGationData = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "Cotact", path: "/Contact-Us", icon: <HiUser /> },
-  { name: "sssssssssssss", path: "/aa", icon: <HiViewColumns /> },
+  { name: "About", path: "/About", icon: <HiViewColumns /> },
   { name: "ss", path: "/ss", icon: <HiRectangleGroup /> },
   { name: "dd", path: "/dd", icon: <HiChatBubbleBottomCenterText /> },
   { name: "ff", path: "/ff", icon: <HiEnvelope /> },
