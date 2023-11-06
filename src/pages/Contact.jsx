@@ -28,11 +28,11 @@ const Contact = () => {
         <div className="">
           <MobileContacts />
         </div>
-        <div className="w-full hidden xl:flex xl:items-center xl:justify-center xl:mt-[500px]">
+        {/* <div className="w-full hidden xl:flex xl:items-center xl:justify-center xl:mt-[500px]">
           <p className="absolute text-white">
             Copy Rights © Priyankara Senarathne-2023{" "}
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );
