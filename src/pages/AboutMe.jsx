@@ -31,7 +31,7 @@ const AboutMe = () => {
                   veniam corrupti quo nam eum dolorum sapiente nulla odit unde
                   natus perferendis atque nesciunt.
                 </div>
-                <div className="h-full">
+                <div className="h-full ">
                   <Stepler />
                 </div>
               </div>

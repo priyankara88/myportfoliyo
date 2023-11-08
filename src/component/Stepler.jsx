@@ -1,61 +1,138 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepLabel from "@mui/material/StepLabel";
-import StepContent from "@mui/material/StepContent";
-import Button from "@mui/material/Button";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import { HiHome, HiUser } from "react-icons/hi2";
-
+import {
+  Box,
+  Button,
+  Paper,
+  Step,
+  StepContent,
+  StepLabel,
+  Stepper,
+  Typography,
+} from "@mui/material";
+import React, { useState } from "react";
+import {
+  HiHome,
+  HiUser,
+  HiViewColumns,
+  HiRectangleGroup,
+} from "react-icons/hi2";
+import { BsCaretDown, BsCaretUp } from "react-icons/bs";
+import { Link, useLocation } from "react-router-dom";
+import { color } from "framer-motion";
 const steps = [
   {
-    label: "Skils",
-    description: (
-      <div className="flex flex-row gap-3">
-        <HiHome /> <HiUser />
-      </div>
+    label: "Skills",
+    icon: (
+      <HiHome style={{ width: "30px", height: "30px", color: "#FFC26E" }} />
     ),
+    skillImg: [<HiHome />, <HiUser />, <HiViewColumns />, <HiRectangleGroup />],
   },
   {
     label: "Experiance",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
+    icon: (
+      <HiUser style={{ width: "30px", height: "30px", color: "#FFC26E" }} />
+    ),
+    description: "AAAAAAAAAAAAAA",
   },
   {
     label: "Awards",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+    icon: (
+      <HiViewColumns
+        style={{ width: "30px", height: "30px", color: "#FFC26E" }}
+      />
+    ),
+    description: "BBBBBBBB",
+  },
+  {
+    label: "Testimonial",
+    icon: (
+      <HiRectangleGroup
+        style={{ width: "30px", height: "30px", color: "#FFC26E" }}
+      />
+    ),
+    description: "CCCCCCCCCCCCC",
   },
 ];
 
-const Stepler = () => {
-  const [activeStep, setActiveStep] = React.useState(0);
+const firstStep = steps[0];
+const skillImages = firstStep.skillImg;
 
-  const handleStepClick = (index) => {
-    setActiveStep(index);
+const Stepler = () => {
+  const [activeStep, setActiveStep] = useState(0);
+  const [Arrow, setArrow] = useState(0);
+
+  const handleNext = (value) => {
+    setActiveStep(value);
+    setArrow(value);
+  };
+
+  console.log("Arrow", Arrow);
+  console.log("activeStep", activeStep);
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleReset = () => {
+    setActiveStep(0);
   };
 
   return (
-    <div className="flex items-center  justify-center  ">
-      <Box sx={{ maxWidth: 400 }}>
+    <div className="w-full pl-10 pr-10">
+      <Box
+        sx={{
+          maxWidth: 400,
+        }}
+      >
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
-            <Step key={step.label}>
-              <StepLabel
-                className="w-[150px] pl-10 pr-10 bg-orange-600 "
-                onClick={() => handleStepClick(index)}
-                StepIconComponent={HiHome}
-              >
-                {step.label}
-              </StepLabel>
+            <Step key={index} onClick={(e) => handleNext(index)}>
+              <div className="w-full cursor-pointer">
+                <StepLabel icon={step.icon}>
+                  <div className=" flex flex-row px-6 py-2 gap-2 text-[#BFC7D2] font-semibold  border-[0.5px] border-[#BFC7D2] bg-white/10 backdrop-blur-sm rounded-md cursor-pointer">
+                    {step.label}
+
+                    {Arrow == index ? (
+                      <BsCaretDown
+                        style={{
+                          color: "#FFC26E",
+                          fontSize: "20px",
+                        }}
+                      />
+                    ) : (
+                      <BsCaretUp
+                        style={{
+                          color: "#BFC7D2",
+
+                          gap: "2px",
+                          fontSize: "20px",
+                        }}
+                      />
+                    )}
+                  </div>
+                </StepLabel>
+              </div>
 
               <StepContent>
-                {/* <Typography>{step.description}</Typography> */}
-                {step.description}
+                <div className="flex flex-row ">
+                  {step.label === "Skills" ? (
+                    skillImages.map((ele, index) => {
+                      return (
+                        <div
+                          className=" text-[30px]  text-[#FFC26E]"
+                          key={index}
+                        >
+                          {ele}
+                        </div>
+                      );
+                    })
+                  ) : step.label === "Experiance" ? (
+                    <Typography>{step.description}</Typography>
+                  ) : step.label === "Awards" ? (
+                    <Typography>{step.description}</Typography>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </StepContent>
             </Step>
           ))}
