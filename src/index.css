@@ -45,17 +45,51 @@
 
 @keyframes animateicon {
   0% {
-    width: 48px;
-    height: 48px;
+    /* box-shadow: 0 5px 15px 0px transparent; */
+    color: white;
+    /* font-size: large;
+    width: 240px; */
+    /* height: 48px;  */
+    transform: translatey(0px);
   }
-  10% {
-    width: 70px;
-    height: 70px;
+  50% {
+    color: white;
+    /* width: 244px; */
+    /* height: 49px; */
+    /* box-shadow: 0 25px 15px 0px transparent; */
+    transform: translatey(-2px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px transparent; */
+    color: #bfc7d2;
+    /* width: 240px; */
+    /* height: 48px; */
+    transform: translatey(0px);
   }
 }
 
-.icon:hover {
-  /* width: 100px;
-  height: 100px; */
-  animation: animateicon 1200ms linear;
+.icon {
+  /* width: 66px;
+  height: 32px; */
+
+  /* animation: animateicon 1200ms linear; */
+  animation: animateicon 2s ease-in-out infinite;
+}
+
+.trans {
+  place-self: center stretch;
+  width: auto;
+  height: 60px;
+
+  transition: opacity 0.8s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.gridd {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 40px;
 }
