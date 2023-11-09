@@ -49,7 +49,7 @@ const steps = [
         style={{ width: "30px", height: "30px", color: "#FFC26E" }}
       />
     ),
-    description: "CCCCCCCCCCCCC",
+    description: "Testimonial",
   },
 ];
 
@@ -113,7 +113,7 @@ const Stepler = () => {
               </div>
 
               <StepContent>
-                <div className="flex flex-row ">
+                <div className="flex flex-row text-white ">
                   {step.label === "Skills" ? (
                     skillImages.map((ele, index) => {
                       return (
@@ -128,6 +128,8 @@ const Stepler = () => {
                   ) : step.label === "Experiance" ? (
                     <Typography>{step.description}</Typography>
                   ) : step.label === "Awards" ? (
+                    <Typography>{step.description}</Typography>
+                  ) : step.label === "Testimonial" ? (
                     <Typography>{step.description}</Typography>
                   ) : (
                     ""
