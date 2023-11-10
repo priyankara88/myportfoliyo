@@ -15,7 +15,7 @@ const Particale = () => {
   return (
     <>
       <Particles
-        className="w-full h-screen absolute translate-z-0  -z-[999]"
+        className="w-full fixed h-screen  translate-z-0  -z-[999]"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}

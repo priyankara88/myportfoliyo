@@ -16,38 +16,69 @@ import {
   HiRectangleGroup,
 } from "react-icons/hi2";
 import { BsCaretDown, BsCaretUp } from "react-icons/bs";
-import { Link, useLocation } from "react-router-dom";
-import { color } from "framer-motion";
+import "../App.css";
 const steps = [
   {
     label: "Skills",
     icon: (
-      <HiHome style={{ width: "30px", height: "30px", color: "#FFC26E" }} />
+      <div className="border-animation max-lg:p-2 lg:p-5  bg-[#ffffff09] border-[#25a6e9] text-white border rounded-full relative -ml-5 bg-black">
+        <HiHome
+          className="animate-spin"
+          style={{ width: "30px", height: "30px", color: "#FFC26E" }}
+        />
+      </div>
     ),
     skillImg: [<HiHome />, <HiUser />, <HiViewColumns />, <HiRectangleGroup />],
   },
   {
     label: "Experiance",
     icon: (
-      <HiUser style={{ width: "30px", height: "30px", color: "#FFC26E" }} />
+      <div className="border-animation max-lg:p-2 lg:p-5  bg-[#ffffff09] border-[#25a6e9] text-white border rounded-full relative -ml-5 bg-black">
+        <HiUser style={{ width: "30px", height: "30px", color: "#FFC26E" }} />
+      </div>
     ),
-    description: "AAAAAAAAAAAAAA",
+    description: (
+      <ul className="list-disc flex-col w-full gap-3 ml-5">
+        <li>
+          BBBBBBB sdfsd fdfasdf hsdfasdfg sdfgs dfgsdf fgsaweer asdfasdfasd
+          asdfadsfadsfa g sd asdfaB
+        </li>
+        <ul className="list-disc  ml-5">
+          <li>aaaaa</li>
+          <li className="mb-5">aaaaa</li>
+        </ul>
+        <li>BBBBBBBB</li>
+        <ul className="list-disc ml-5">
+          <li>aaaaa</li>
+          <li className="mb-5">aaaaa</li>
+        </ul>
+        <li>BBBBBBBB</li>
+        <ul className="list-disc ml-5">
+          <li>aaaaa</li>
+          <li className="mb-5">aaaaa</li>
+        </ul>
+      </ul>
+    ),
   },
   {
     label: "Awards",
     icon: (
-      <HiViewColumns
-        style={{ width: "30px", height: "30px", color: "#FFC26E" }}
-      />
+      <div className="border-animation max-lg:p-2 lg:p-5 bg-[#ffffff09] border-[#25a6e9] text-white border rounded-full relative -ml-5 bg-black">
+        <HiViewColumns
+          style={{ width: "30px", height: "30px", color: "#FFC26E" }}
+        />
+      </div>
     ),
     description: "BBBBBBBB",
   },
   {
     label: "Testimonial",
     icon: (
-      <HiRectangleGroup
-        style={{ width: "30px", height: "30px", color: "#FFC26E" }}
-      />
+      <div className="border-animation max-lg:p-2 lg:p-5  bg-[#ffffff09] border-[#25a6e9] text-white border rounded-full relative -ml-5 bg-black">
+        <HiRectangleGroup
+          style={{ width: "30px", height: "30px", color: "#FFC26E" }}
+        />
+      </div>
     ),
     description: "Testimonial",
   },
@@ -77,7 +108,7 @@ const Stepler = () => {
   };
 
   return (
-    <div className="w-full pl-10 pr-10">
+    <div className="w-full flex absolute justify-center items-center pl-10 pr-10">
       <Box
         sx={{
           maxWidth: 400,
@@ -113,12 +144,12 @@ const Stepler = () => {
               </div>
 
               <StepContent>
-                <div className="flex flex-row text-white ">
+                <div className="flex flex-row w-full  max-lg:w-[50vw] text-white ">
                   {step.label === "Skills" ? (
                     skillImages.map((ele, index) => {
                       return (
                         <div
-                          className=" text-[30px]  text-[#FFC26E]"
+                          className=" p-5 backdrop-blur-lg rounded-lg w-screen max-lg:w-[50vw] bg-[#ffffff09]"
                           key={index}
                         >
                           {ele}
@@ -126,11 +157,17 @@ const Stepler = () => {
                       );
                     })
                   ) : step.label === "Experiance" ? (
-                    <Typography>{step.description}</Typography>
+                    <Typography className="p-5 backdrop-blur-lg rounded-lg w-screen max-lg:w-[50vw] bg-[#ffffff09]">
+                      {step.description}
+                    </Typography>
                   ) : step.label === "Awards" ? (
-                    <Typography>{step.description}</Typography>
+                    <Typography className="p-5 backdrop-blur-lg rounded-lg w-screen bg-[#ffffff09]  max-lg:w-[50vw]">
+                      {step.description}
+                    </Typography>
                   ) : step.label === "Testimonial" ? (
-                    <Typography>{step.description}</Typography>
+                    <Typography className="p-5 backdrop-blur-lg rounded-lg w-screen bg-[#ffffff09] max-lg:w-[50vw]">
+                      {step.description}
+                    </Typography>
                   ) : (
                     ""
                   )}
