@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TimeLine from "./TimeLine";
+import Skillsub from "./Skillsub";
 
 const Skils = () => {
   const [openTab, setOpenTab] = useState(1);
@@ -66,7 +67,7 @@ const Skils = () => {
             <TimeLine />
           </div>
           <div className={openTab === 2 ? "block" : "hidden"}>
-            React JS with Tailwind CSS Tab 2 Content show
+            <Skillsub />
           </div>
           <div className={openTab === 3 ? "block" : "hidden"}>hello</div>
         </div>
