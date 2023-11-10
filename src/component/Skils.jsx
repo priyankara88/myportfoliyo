@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import TimeLine from "./TimeLine";
 import Skillsub from "./Skillsub";
+import Nbqsa from "../assets/img/myNbqsa.png";
+import cup from "../assets/img/logo-black.png";
 
 const Skils = () => {
   const [openTab, setOpenTab] = useState(1);
@@ -69,7 +71,23 @@ const Skils = () => {
           <div className={openTab === 2 ? "block" : "hidden"}>
             <Skillsub />
           </div>
-          <div className={openTab === 3 ? "block" : "hidden"}>hello</div>
+          <div className={openTab === 3 ? "block" : "hidden"}>
+            <div className="w-full flex flex-col ">
+              <p className="text-[#FFC26E] font-semibold mt-5 text-center">
+                "National ICT Awards 2014 InHouse Category Glod winner-Sri
+                Lanka"
+              </p>
+              <div className="w-full">
+                <div className="w-full flex flex-row item-center justify-center">
+                  <img
+                    className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square"
+                    src={Nbqsa}
+                    alt="MyNbqsa"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
