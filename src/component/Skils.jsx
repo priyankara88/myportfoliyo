@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import TimeLine from "./TimeLine";
 import Skillsub from "./Skillsub";
 import Nbqsa from "../assets/img/myNbqsa.png";
-import cup from "../assets/img/logo-black.png";
 
 const Skils = () => {
   const [openTab, setOpenTab] = useState(1);
@@ -24,7 +23,7 @@ const Skils = () => {
             <span className="w-5 h-5 rounded-full border !border-[#6b9767]"></span>
           </div>
           <div className="tabs gap-5 flex md:ml-10 ">
-            <ul className="flex flex-col gap-5 max-md:absolute max-md:left-0 max-md:-ml-8 max-md:mt-14 space-y-2 md:space-x-2 md:flex-row md:space-y-0">
+            <ul className="flex flex-row gap-5   space-y-2 md:space-x-2 md:flex-row md:space-y-0">
               <li>
                 <button
                   onClick={() => setOpenTab(1)}
@@ -32,7 +31,7 @@ const Skils = () => {
                     openTab === 1
                       ? "md:bg-gradient-to-b from-[#3b3b3b00] to-[#29292975] !border-gray-700 border-x  text-white"
                       : ""
-                  } inline-block max-md:-rotate-90 px-4 py-2 text-gray-600 rounded-t`}
+                  }  text-gray-600 rounded-t`}
                 >
                   Experiance
                 </button>
@@ -44,7 +43,7 @@ const Skils = () => {
                     openTab === 2
                       ? "md:bg-gradient-to-b from-[#3b3b3b00] to-[#29292975] !border-gray-700 border-x  text-white"
                       : ""
-                  } inline-block px-4 max-md:-rotate-90 py-2 text-gray-600 rounded-t`}
+                  }  text-gray-600 rounded-t`}
                 >
                   Skills
                 </button>
@@ -56,7 +55,7 @@ const Skils = () => {
                     openTab === 3
                       ? "md:bg-gradient-to-b from-[#3b3b3b00] to-[#29292975] !border-gray-700 border-x  text-white"
                       : ""
-                  } inline-block px-4 max-md:-rotate-90 py-2 text-gray-600 rounded-t`}
+                  }  text-gray-600 rounded-t`}
                 >
                   Awards
                 </button>

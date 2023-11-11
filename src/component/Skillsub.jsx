@@ -21,11 +21,12 @@ import { RiTeamLine } from "react-icons/ri";
 import { BsMicrosoft } from "react-icons/bs";
 
 const Skillsub = () => {
+  //w-full sm:overflow-y-auto sm:flex sm:flex-col md:max-lg:flex md:max-lg:flex-row md:max-lg:justify-between
   return (
-    <div className="w-full flex justify-between">
-      <div>
+    <div className="w-full flex flex-col   sm:flex sm:flex-row">
+      <div className="overflow-y-hidden">
         <p className="text-[#FFC26E]">Front-End</p>
-        <div className="w-full grid grid-cols-2 gap-1  p-4">
+        <div className="w-full grid grid-cols-2   gap-1 p-4 ">
           <p className="gap-1 flex items-center justify-center flex-row border rounded-lg shadow-2xl !border-gray-700 p-1 text-[#BFC7D2]">
             ReactJS
             <BiLogoReact className="mt-1 text-[#FFC26E]" />
@@ -67,7 +68,7 @@ const Skillsub = () => {
       </div>
       <div>
         <p className="text-[#FFC26E]">Back-End</p>
-        <div className="w-full grid grid-cols-2 gap-1  p-4">
+        <div className="w-full grid max-md:grid-cols-1 max-lg:grid-cols-1 grid-cols-2 gap-1 p-4 ">
           <p className="gap-1 flex items-center justify-center flex-row border rounded-lg shadow-2xl !border-gray-700 p-1 text-[#BFC7D2]">
             NodeJS
             <BiLogoNodejs className="mt-1 text-[#FFC26E]" />
@@ -84,7 +85,7 @@ const Skillsub = () => {
       </div>
       <div>
         <p className="text-[#FFC26E]"> DataBase</p>
-        <div className="w-full grid grid-cols-2 gap-1  p-4">
+        <div className="w-full grid max-md:grid-cols-1 max-lg:grid-cols-1 grid-cols-2 gap-1  p-4">
           <p className="gap-1 flex items-center justify-center flex-row border rounded-lg shadow-2xl !border-gray-700 p-1 text-[#BFC7D2]">
             MSSQL
             <TbFileTypeSql className="mt-1 text-[#FFC26E]" />
@@ -109,7 +110,7 @@ const Skillsub = () => {
       </div>
       <div>
         <p className="text-[#FFC26E]">Tools</p>
-        <div className="w-full grid grid-cols-2 gap-1  p-4">
+        <div className="w-full grid max-md:grid-cols-1 max-lg:grid-cols-1 grid-cols-2 gap-1 p-4 ">
           <p className="gap-1 flex flex-row border rounded-lg shadow-2xl !border-gray-700 p-1 text-[#BFC7D2]">
             GitHub
             <AiFillGithub className="mt-1 text-[#FFC26E]" />
