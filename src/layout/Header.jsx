@@ -9,12 +9,12 @@ import {
 import { Link, useLocation } from "react-router-dom";
 
 const NaviGationData = [
-  { name: "home", path: "/", icon: <HiHome /> },
-  { name: "Cotact", path: "/Contact-Us", icon: <HiUser /> },
-  { name: "About", path: "/About", icon: <HiViewColumns /> },
-  { name: "ss", path: "/ss", icon: <HiRectangleGroup /> },
-  { name: "dd", path: "/dd", icon: <HiChatBubbleBottomCenterText /> },
-  { name: "ff", path: "/ff", icon: <HiEnvelope /> },
+  { name: "Home", path: "/", icon: <HiHome /> },
+  { name: "About", path: "/About", icon: <HiUser /> },
+  { name: "Projects", path: "/Projects", icon: <HiViewColumns /> },
+  { name: "Cotact", path: "/Contact-Us", icon: <HiEnvelope /> },
+  // { name: "dd", path: "/dd", icon: <HiChatBubbleBottomCenterText /> },
+  // { name: "ff", path: "/ff", icon: <HiRectangleGroup /> },
 ];
 
 const Header = () => {

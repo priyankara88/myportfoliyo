@@ -19,7 +19,7 @@ const steps = [
   },
   {
     id: 3,
-    name: "Software Engineer | FrontEnd Developer",
+    name: "React FrontEnd Developer",
     time: "2023-present",
   },
 ];

@@ -10,19 +10,22 @@ const Social = () => {
     <div className="absolute  flex text-white items-center justify-center gap-x-5 text-lg z-50 cursor-pointer">
       <Link
         key={1}
-        to={"https://github.com/priyankara88"}
+        to={"https://www.linkedin.com/in/priyankara-senarathne/"}
+        target="_blank"
         className="hover:text-[#FFC26E] text-[20px] lg:text-[30px] transition-all duration-300 cursor-pointer "
       >
         <RiLinkedinBoxFill />
       </Link>
       <Link
-        to={"/"}
+        to={"https://github.com/priyankara88"}
+        target="_blank"
         className="hover:text-[#FFC26E] text-[20px]  lg:text-[30px] transition-all duration-300 cursor-pointer"
       >
         <RiGithubFill />
       </Link>
       <Link
-        to={"/"}
+        to={"https://www.facebook.com/priyankara.senarathne"}
+        target="_blank"
         className="hover:text-[#FFC26E] text-[20px] lg:text-[30px] transition-all duration-300 cursor-pointer"
       >
         <RiFacebookBoxLine />

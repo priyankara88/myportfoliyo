@@ -79,7 +79,7 @@ const Skils = () => {
               <div className="w-full">
                 <div className="w-full flex flex-row item-center justify-center">
                   <img
-                    className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square"
+                    className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square bg-cover"
                     src={Nbqsa}
                     alt="MyNbqsa"
                   />
