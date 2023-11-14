@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaMobileAlt, FaRegAddressCard, FaMapMarkerAlt } from "react-icons/fa";
 import { EmailMe } from "../../pages/EmailMe";
+import { MdOutlineMail } from "react-icons/md";
 
 const MobileContacts = () => {
   const [selextedTab, setSelectedTab] = useState("Telephone");
@@ -49,15 +50,15 @@ const MobileContacts = () => {
               }`}
             >
               <span className="flex justify-center items-center gap-1 cursor-pointer">
-                <FaMapMarkerAlt />
-                Message-Me
+                <MdOutlineMail />
+                Message
               </span>
             </div>
           </div>
 
           <div className="w-full p-10 flex items-center justify-center border border-gray-300 text-[#FFC26E] rounded-b-md border-t-transparent ">
             {selextedTab == "Telephone" ? (
-              <div>004915204570431</div>
+              <div className="">004915204570431</div>
             ) : selextedTab == "Address" ? (
               <div>Stuttgart</div>
             ) : selextedTab == "Message-Me" ? (

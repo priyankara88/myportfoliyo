@@ -93,3 +93,7 @@
   place-items: center;
   gap: 40px;
 }
+
+.not-found-body {
+  @apply flex flex-col items-center justify-center h-screen bg-transparent;
+}
