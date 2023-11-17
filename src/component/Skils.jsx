@@ -14,7 +14,7 @@ const Skils = () => {
   //     return () => clearInterval(interval); // Clear the interval when the component unmounts
   //   }, []);
   return (
-    <div className="fixed h-screen z-10 w-full flex justify-center items-center">
+    <div className="fixed h-full z-10 w-full flex justify-center items-center">
       <div className="file-explor max-md:w-[90vw] md:w-[70vw] h-[50vh] backdrop-blur-md border rounded-lg shadow-2xl !border-gray-700">
         <div className="top-section w-full h-10 gap-4 rounded-t-lg bg-gradient-to-r from-[#3b3b3b00] via-[#35353575] to-[#3b3b3b00] backdrop-blur-lg flex items-center justify-start">
           <div className="round-btn flex h-full ml-5 gap-2 justify-start items-center">
