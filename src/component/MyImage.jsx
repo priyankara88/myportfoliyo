@@ -7,7 +7,7 @@ const MyImage = () => {
         alt="My Image"
         width={200}
         height={200}
-        className="translate-z-0   w-full h-full"
+        className="   w-full h-full" //translate-z-0
       />
     </div>
   );

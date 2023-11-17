@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Particale />
 
-      <div className=" h-screen ">
+      <div className=" h-full w-full  ">
         <div className="absolute   flex items-center px-16 xl:px-0 xl:h-[98px]  xl:pl-40 w-full">
           <div className="container mx-auto  ">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8 xl:pr-40">
@@ -30,9 +30,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-screen h-screen  ">
-          <div className="pt-20 text-center flex flex-col justify-center  item-center xl:pt-40 xl:text-left  container mx-auto">
-            <h1 className=" text-[20px] md:text-[28px] lg:text-[30px] text-[#BFC7D2] font-bold md:pl-30 xl:pl-40 pt-[100px]">
+        <div className="w-full h-full  ">
+          <div className=" min-h-[500px] text-center flex flex-col justify-center  item-center xl:pt-40 xl:text-left container mx-auto ">
+            <h1 className=" text-[20px] md:text-[28px] lg:text-[30px] text-[#BFC7D2] font-bold md:pl-30 xl:pl-40 lg:pt-[100px]">
               Hello, <span className="text-[#FFC26E]">It's Me</span> <br />
             </h1>
             <h1 className="xl:pl-40 text-[40px] lg:text-[50px] md:text-[50px] font-bold text-[#BFC7D2]">

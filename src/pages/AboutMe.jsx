@@ -11,7 +11,7 @@ const AboutMe = () => {
     <>
       <Particale />
       <div className=" flex  w-screen relative">
-        <div className="flex items-center px-8 xl:px-0 xl:h-[98px]  xl:pl-40 w-full">
+        <div className="absolute flex items-center px-8 xl:px-0 xl:h-[98px]  xl:pl-40 w-full">
           <div className="container mx-auto  ">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8 xl:pr-40">
               {/* logo */}
@@ -28,7 +28,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="w-screen absolute h-screen flex flex-col -z-50">
+        <div className="min-h-[500px] w-full absolute  flex flex-col -z-50">
           <Skils />
           {/* <div className=" max-lg:hidden w-2/4 h-screen justify-center m-auto absolute text-center ml-10 items-center flex p-10 text-4xl text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe ex

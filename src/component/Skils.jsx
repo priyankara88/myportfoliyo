@@ -71,20 +71,20 @@ const Skils = () => {
             <Skillsub />
           </div>
           <div className={openTab === 3 ? "block" : "hidden"}>
-            <div className="w-full flex flex-col ">
+            <div className="w-full  flex flex-col items-center justify-center  relative overflow-hidden ">
               <p className="text-[#FFC26E] font-semibold mt-5 text-center">
                 "National ICT Awards 2014 InHouse Category Glod winner-Sri
                 Lanka"
               </p>
-              <div className="w-full">
-                <div className="w-full flex flex-row item-center justify-center">
-                  <img
-                    className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square bg-cover"
-                    src={Nbqsa}
-                    alt="MyNbqsa"
-                  />
-                </div>
-              </div>
+              {/* <div className="w-full "> */}
+              {/* <div className="w-full flex items-center justify-center"> */}
+              <img
+                className="mt-2 w-full h-48 object-cover overflow-y-auto items-center justify-center bg-no-repeat  bg-cover"
+                src={Nbqsa}
+                alt="MyNbqsa"
+              />
+              {/* </div> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
