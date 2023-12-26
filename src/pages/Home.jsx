@@ -56,7 +56,7 @@ const Home = () => {
           ></div> */}
           <div>
             {/* bg-none z-10 flex w-full h-screen items-center justify-center max-w-[400px] max-h-[550px] absolute -botton-32 lg:bottom-0 lg:right-[8%]  right-0 bottom-0 */}
-            <div className="hidden absolute   backdrop-blur-sm bg-[#BFC7D2]/10   rounded-t-full  xl:flex first-line:items-center justify-center w-[350px] h-[350px] lg:right-60 lg:bottom-48 border-2 border-#25A6E9 ">
+            <div className="hidden absolute  overflow-hidden backdrop-blur-sm bg-[#BFC7D2]/10   rounded-t-full  xl:flex first-line:items-center justify-center w-[350px] h-[350px] lg:right-60 lg:bottom-48 border-2 border-#25A6E9 ">
               <MyImage />
             </div>
           </div>

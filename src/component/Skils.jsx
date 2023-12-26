@@ -14,7 +14,7 @@ const Skils = () => {
   //     return () => clearInterval(interval); // Clear the interval when the component unmounts
   //   }, []);
   return (
-    <div className="fixed h-full z-10 w-full flex justify-center items-center">
+    <div className="fixed h-screen z-10 w-full flex justify-center items-center">
       <div className="file-explor max-md:w-[90vw] md:w-[70vw] h-[50vh] backdrop-blur-md border rounded-lg shadow-2xl !border-gray-700">
         <div className="top-section w-full h-10 gap-4 rounded-t-lg bg-gradient-to-r from-[#3b3b3b00] via-[#35353575] to-[#3b3b3b00] backdrop-blur-lg flex items-center justify-start">
           <div className="round-btn flex h-full ml-5 gap-2 justify-start items-center">
@@ -71,20 +71,20 @@ const Skils = () => {
             <Skillsub />
           </div>
           <div className={openTab === 3 ? "block" : "hidden"}>
-            <div className="w-full  flex flex-col items-center justify-center  relative overflow-hidden ">
+            <div className="w-full flex flex-col ">
               <p className="text-[#FFC26E] font-semibold mt-5 text-center">
                 "National ICT Awards 2014 InHouse Category Glod winner-Sri
                 Lanka"
               </p>
-              {/* <div className="w-full "> */}
-              {/* <div className="w-full flex items-center justify-center"> */}
-              <img
-                className="mt-2 w-full h-48 object-cover overflow-y-auto items-center justify-center bg-no-repeat  bg-cover"
-                src={Nbqsa}
-                alt="MyNbqsa"
-              />
-              {/* </div> */}
-              {/* </div> */}
+              <div className="w-full">
+                <div className="w-full flex flex-row item-center justify-center">
+                  <img
+                    className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square bg-cover"
+                    src={Nbqsa}
+                    alt="MyNbqsa"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
