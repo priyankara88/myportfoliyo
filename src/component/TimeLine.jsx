@@ -91,15 +91,55 @@ const TimeLine = () => {
       <div>
         {activeStep === 0 ? (
           <div className="mt-4 w-full border-[0.5px] rounded-lg shadow-2xl backdrop-blur-lg !border-gray-700">
-            {activeStep}
+            <p className="text-[#BFC7D2]">
+              Architected an automated Android application that streamlined
+              manual sales order-picking procedure, leading to 45% increase in
+              sales and improved order processing efficiency. Boosted frontend
+              and backend web application processes by implementing CI/CD
+              pipelines that optimised order management, reduced
+              order-to-delivery time from 1 week to 24hrs, and increased
+              profitability by 15%. ▪ Enhanced code quality across the React
+              codebase, reducing code review time, minimal software
+              errors/performance bottlenecks and improved system stability. ▪
+              Ensured delivery of high-quality software products by authoring
+              REST API documentation and technical specifications.{" "}
+            </p>
           </div>
         ) : activeStep === 1 ? (
           <div className="mt-4 w-full border-[0.5px] rounded-lg shadow-2xl backdrop-blur-lg !border-gray-700">
-            {activeStep}
+            <p className="text-[#BFC7D2]">
+              Led development of a Logistic ERP system, which reduced
+              procurement fraud by 90% and improved logistics efficiency. ▪
+              Shepherded 12 developers in converting prototypes and wireframes
+              into up-to-date frontend code using latest TypeScript React &
+              Node.js versions, all within the agile framework. ▪ Designed
+              software components that met organisational needs by liaising with
+              stakeholders, including department heads and end-users to gather
+              requirements. ▪ Minimised software errors by writing, reviewing
+              and debugging clean, efficient and well-documented codes,
+              integrating them with frameworks and APIs and utilising multiple
+              tools to configure GUI. ▪ Utilised Selenium to build unit testing
+              infrastructure in agile environment, resulting in optimal system
+              performance and reduced user-reported bugs. ▪ Increased
+              application responsiveness by providing post-implementation
+              support, including code review, troubleshooting and user feedback
+              to strengthen system integrity
+            </p>
           </div>
         ) : (
           <div className="mt-4 w-full border-[0.5px] rounded-lg shadow-2xl backdrop-blur-lg !border-gray-700">
-            {activeStep}
+            <p className="text-[#BFC7D2]">
+              ▪ Build and maintain responsive, interactive applications using
+              modern web technologies such as React.js, resulting in a reduction
+              in page load speeds and conversion rates. ▪ Design innovative,
+              reusable User Interface (UI) components that reduce development
+              costs and time for teams. ▪ Spearhead integration of third-party
+              services and APIs to add new functionalities, increasing user
+              interaction. ▪ Develop and execute frontend development strategies
+              by implementing optimisation techniques such as code minification
+              and troubleshooting issues using browser developer tools, thus
+              increasing website performance.
+            </p>
           </div>
         )}
       </div>

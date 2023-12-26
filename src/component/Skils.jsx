@@ -76,14 +76,14 @@ const Skils = () => {
                 "National ICT Awards 2014 InHouse Category Glod winner-Sri
                 Lanka"
               </p>
-              <div className="w-full">
-                <div className="w-full flex flex-row item-center justify-center">
-                  <img
-                    className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square bg-cover"
-                    src={Nbqsa}
-                    alt="MyNbqsa"
-                  />
-                </div>
+              <div className="w-full flex items-center justify-center overflow-hidden">
+                {/* <div className="w-full flex flex-row overflow-hidden item-center justify-center"> */}
+                <img
+                  className="mt-2 w-[550px] h-[225px] bg-no-repeat aspect-square bg-cover"
+                  src={Nbqsa}
+                  alt="MyNbqsa"
+                />
+                {/* </div> */}
               </div>
             </div>
           </div>
