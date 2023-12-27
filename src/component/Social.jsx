@@ -13,23 +13,23 @@ const Social = () => {
         key={1}
         to={"https://www.linkedin.com/in/priyankara-senarathne/"}
         target="_blank"
-        className="hover:text-[#FFC26E] sm:text-[50px] lg:text-[40px] transition-all duration-300 cursor-pointer "
+        className="hover:text-[#FFC26E]  transition-all duration-300 cursor-pointer "
       >
-        <RiLinkedinBoxFill />
+        <RiLinkedinBoxFill className="text-[5rem] lg:text-[30px]" />
       </Link>
       <Link
         to={"https://github.com/priyankara88"}
         target="_blank"
-        className="hover:text-[#FFC26E] sm:text-[50px]  lg:text-[40px] transition-all duration-300 cursor-pointer"
+        className="hover:text-[#FFC26E]  transition-all duration-300 cursor-pointer"
       >
-        <RiGithubFill />
+        <RiGithubFill className="text-[5rem]   lg:text-[30px]" />
       </Link>
       <Link
         to={"https://www.facebook.com/priyankara.senarathne"}
         target="_blank"
-        className="hover:text-[#FFC26E] sm:text-[50px] lg:text-[40px] transition-all duration-300 cursor-pointer"
+        className="hover:text-[#FFC26E] transition-all duration-300 cursor-pointer"
       >
-        <RiFacebookBoxLine />
+        <RiFacebookBoxLine className="text-[5rem]   lg:text-[30px]" />
       </Link>
     </>
     // </div>
