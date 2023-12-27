@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .translate-z-0 {
   transform: translateZ(0px);
 }
@@ -71,7 +70,6 @@
 .icon {
   /* width: 66px;
   height: 32px; */
-
   /* animation: animateicon 1200ms linear; */
   animation: animateicon 2s ease-in-out infinite;
 }
@@ -80,7 +78,6 @@
   place-self: center stretch;
   width: auto;
   height: 60px;
-
   transition: opacity 0.8s ease, color 0.5s ease, transform 0.5s ease;
 }
 
@@ -96,4 +93,41 @@
 
 .not-found-body {
   @apply flex flex-col items-center justify-center h-screen bg-transparent;
+}
+
+@keyframes boxShadowAnimation {
+  0% {
+    filter: drop-shadow(0px -12px 5px rgba(159, 7, 254, 0.5))
+      drop-shadow(0px 12px 5px rgba(0, 187, 245, 0.5))
+      drop-shadow(-12px 0px 5px rgba(97, 255, 0, 0.5))
+      drop-shadow(12px 0px 5px rgba(255, 0, 0, 0.5));
+  }
+  25% {
+    filter: drop-shadow(0px -12px 5px rgba(0, 187, 245, 0.5))
+      drop-shadow(0px 12px 5px rgba(97, 255, 0, 0.5))
+      drop-shadow(-12px 0px 5px rgba(255, 0, 0, 0.5))
+      drop-shadow(12px 0px 5px rgba(159, 7, 254, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0px -12px 5px rgba(97, 255, 0, 0.5))
+      drop-shadow(0px 12px 5px rgba(255, 0, 0, 0.5))
+      drop-shadow(-12px 0px 5px rgba(159, 7, 254, 0.5))
+      drop-shadow(12px 0px 5px rgba(0, 187, 245, 0.5));
+  }
+  75% {
+    filter: drop-shadow(0px -12px 5px rgba(255, 0, 0, 0.5))
+      drop-shadow(0px 12px 5px rgba(159, 7, 254, 0.5))
+      drop-shadow(-12px 0px 5px rgba(0, 187, 245, 0.5))
+      drop-shadow(12px 0px 5px rgba(97, 255, 0, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0px -12px 5px rgba(159, 7, 254, 0.5))
+      drop-shadow(0px 12px 5px rgba(0, 187, 245, 0.5))
+      drop-shadow(-12px 0px 5px rgba(97, 255, 0, 0.5))
+      drop-shadow(12px 0px 5px rgba(255, 0, 0, 0.5));
+  }
+}
+
+.image {
+  animation: boxShadowAnimation 2s infinite linear;
 }

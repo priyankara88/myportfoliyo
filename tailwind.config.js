@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Carattere: ['"Carattere"', ...defaultTheme.fontFamily.sans],
+        Rubik: ['"Rubik"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
