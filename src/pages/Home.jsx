@@ -5,33 +5,35 @@ import Particale from "../component/Particale";
 import Social from "../component/Social";
 import { motion } from "framer-motion";
 import AnimatedText from "../component/AnimatedText";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 const expanded = true;
 const Home = () => {
   const [screen, setScreen] = useState(window.innerWidth <= 980 ? true : false);
-  console.log("screen size", screen);
+  const isMobile = useMediaQuery({ query: `(max-width:980px)` });
+  console.log("isMobile", isMobile);
+
+  useEffect(() => {
+    setScreen(isMobile);
+  }, [isMobile]);
 
   return (
     <>
       <Particale />
       <div className="w-screen h-screen">
-        <div className="w-full pl-14 lg:pl-36 pt-5 pr-24 flex flex-row items-center justify-between">
+        <div className="w-full pl-14 lg:pl-40 pt-5 pr-24 flex flex-row items-center justify-between">
           <div className="flex items-center justify-center">
             {/* lg:text-[3rem] max-lg:text-[3rem] */}
-            <p className="text-[5rem]  font-Carattere text-white">Priyankara</p>
+            <p className="text-[3rem] sm:text-[4rem] font-Carattere text-white">
+              Priyankara
+            </p>
           </div>
           <div className=" flex flex-row items-center justify-center">
             <Social />
           </div>
         </div>
         <div className="w-full mt-24 flex items-center justify-center">
-          <div
-            className={`${
-              screen === true
-                ? "w-[650px] h-[650px] bg-cover bg-no-repeat bg-center lg:hidden image flex items-center overflow-hidden rounded-full border-2 border-gray-200"
-                : "w-[350px] h-[350px] bg-cover bg-no-repeat bg-center lg:hidden image flex items-center overflow-hidden rounded-full border-2 border-gray-200"
-            } `}
-          >
+          <div className="sm:w-[550px] h-[550px] lg:hidden border-2  rounded-full border-#25A6E9 overflow-hidden image">
             <MyImage />
           </div>
         </div>

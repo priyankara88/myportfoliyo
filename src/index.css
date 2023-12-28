@@ -131,3 +131,12 @@
 .image {
   animation: boxShadowAnimation 2s infinite linear;
 }
+
+/* .link-plate {
+  @apply w-[70px] h-[70px] -top-4 relative m-5 shadow-black shadow-md flex-shrink-0 bg-black hover: bg-white transition-all duration-700 ease-in-out rounded-full;
+}
+
+.link-plate:hover {
+  @apply transition-all duration-300 ease-in-out;
+  animation: boxShadowAnimation 2s infinite linear;
+} */
